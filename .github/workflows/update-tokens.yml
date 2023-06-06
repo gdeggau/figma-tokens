@@ -2,10 +2,8 @@ name: Generate design tokens
 
 on:
   repository_dispatch:
-    types: update-tokens
-
-permissions:
-  contents: write
+    types:
+      - update-tokens
 
 jobs:
   build:
